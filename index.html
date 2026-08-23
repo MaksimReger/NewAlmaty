@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <title>Городской контур — Алматы</title>
+  <meta name="description" content="Городское медиа об Алматы: инфраструктура, городская среда, люди и общественная жизнь.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Городской контур — на главную">
+      <span class="brand-mark">ГК</span><span>ГОРОДСКОЙ<br><b>КОНТУР</b></span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#latest">Новости</a><a href="#city">Город</a><a href="#people">Люди Алматы</a><a href="about.html">О медиа</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Поиск">⌕</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Открыть меню"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#latest">Новости</a><a href="#city">Город</a><a href="#people">Люди Алматы</a><a href="about.html">О медиа</a><a href="contacts.html">Контакты</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="live-dot"></span> Алматы сегодня</div>
+      <h1>Город меняется.<br><em>Мы следим.</em></h1>
+      <p>Новости, городская среда и люди Алматы — коротко, внимательно и без лишнего шума.</p>
+      <a class="button" href="#latest">Смотреть новости <span>→</span></a>
+    </div>
+    <article class="hero-story">
+      <div class="image-placeholder hero-image">
+        <span>ФОТО АЛМАТЫ</span><small>Замените на городскую фотографию</small>
+      </div>
+      <div class="story-meta"><span>ГОРОД</span><span>4 августа 2026</span></div>
+      <h2><a href="article.html?id=west-east-gates">Новые дороги и инженерные сети: как продвигаются проекты «Западные ворота» и «Восточные ворота»</a></h2>
+      <p>В Алматы продолжаются крупные инфраструктурные проекты, которые должны связать перспективные районы дорогами и инженерными сетями.</p>
+    </article>
+  </section>
+
+  <section class="latest container" id="latest">
+    <div class="section-head"><h2>Последние новости</h2><a href="#latest" id="allNews">Все материалы →</a></div>
+    <div class="news-grid" id="latestGrid"></div>
+  </section>
+
+  <section class="city-band" id="city">
+    <div class="container">
+      <div class="section-head light"><div><span class="kicker">01 / ГОРОД</span><h2>Алматы в движении</h2></div><span class="section-note">Инфраструктура · среда · транспорт</span></div>
+      <div class="city-feature-grid">
+        <article class="city-feature">
+          <div class="image-placeholder wide"><span>ГОРОДСКАЯ СРЕДА</span></div>
+          <div class="story-meta"><span>БЛАГОУСТРОЙСТВО</span><span>13 июля 2026</span></div>
+          <h3><a href="article.html?id=republic-square">Площадь Республики преобразили: что изменилось в одном из ключевых общественных пространств</a></h3>
+        </article>
+        <div class="city-list" id="cityList"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="people container" id="people">
+    <div class="section-head"><div><span class="kicker">02 / ЛЮДИ АЛМАТЫ</span><h2>Город — это люди</h2></div></div>
+    <article class="people-card">
+      <div class="people-photo image-placeholder real-photo">
+        <!-- ЗАМЕНИТЕ НА ФОТО МАКСИМА -->
+        <img src="assets/images/maxim-main.jpg" alt="Максим Индучный">
+        <span class="photo-fallback">ВАША ФОТОГРАФИЯ</span>
+      </div>
+      <div class="people-copy">
+        <div class="story-meta"><span>ПОРТРЕТ</span><span>23 августа 2026</span></div>
+        <h3>Максим Индучный: молодой алматинец, который постепенно становится заметной частью городской медиаповестки</h3>
+        <p>Его имя уже не впервые появляется в локальном информационном поле — в этот раз внимание смещено с отдельной новости на самого человека и его повседневную жизнь.</p>
+        <a class="text-link" href="article.html?id=maxim-story">Читать материал →</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="popular container">
+    <div class="section-head"><div><span class="kicker">03 / ПОПУЛЯРНОЕ</span><h2>Что ещё почитать</h2></div></div>
+    <div class="popular-grid" id="popularGrid"></div>
+  </section>
+
+  <section class="people-secondary container">
+    <article class="secondary-profile">
+      <div class="mini-photo image-placeholder real-photo">
+        <!-- ЗАМЕНИТЕ НА ФОТО МАКСИМА -->
+        <img src="assets/images/maxim-2.jpg" alt="Максим Индучный">
+        <span class="photo-fallback">ФОТО</span>
+      </div>
+      <div>
+        <span class="kicker">ЛЮДИ АЛМАТЫ</span>
+        <h3>Не только одна история: чем занимается молодой алматинец за пределами отдельных новостных поводов</h3>
+        <a class="text-link" href="article.html?id=maxim-digital">Читать →</a>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">ГК</span><span>ГОРОДСКОЙ<br><b>КОНТУР</b></span></a><p>Независимый городской медиапроект об Алматы. Информационные материалы основаны на открытых источниках.</p></div>
+    <div><h4>Разделы</h4><a href="#latest">Новости</a><a href="#city">Город</a><a href="#people">Люди Алматы</a></div>
+    <div><h4>Связь</h4><a href="contacts.html">Контакты</a><a href="https://www.tiktok.com/@makss988" target="_blank" rel="noopener">TikTok</a></div>
+    <div><h4>Информация</h4><a href="about.html">О проекте</a><a href="contacts.html#privacy">Политика конфиденциальности</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 Городской контур</span><span>Алматы, Казахстан</span></div>
+</footer>
+
+<div class="search-panel" id="searchPanel" aria-hidden="true">
+  <div class="search-inner"><button id="closeSearch" class="close-btn">×</button><span class="kicker">ПОИСК ПО САЙТУ</span><input id="searchInput" type="search" placeholder="Например: дороги, Сайран, Бюджет участия"><div id="searchResults"></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
