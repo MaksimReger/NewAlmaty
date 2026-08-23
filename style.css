@@ -8,3 +8,8 @@
 .people-photo.real-photo{height:480px}
 @media(max-width:800px){.people-photo.real-photo{height:390px}}
 @media(max-width:480px){.people-photo.real-photo{height:330px}}
+
+/* Реальные тематические фотографии для новостной ленты */
+.news-photo img, .hero-image img, .city-feature .wide img { width:100%; height:100%; object-fit:cover; display:block; }
+.news-photo { overflow:hidden; }
+.news-photo .photo-fallback { display:none; }
